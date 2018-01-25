@@ -12,7 +12,7 @@ CountDownLatch latch = new CountDownLatch(NUM_HILOS);
 latch.await();
 ```
 
-3. En nuestra tarea, sea un **Runnable** o un **Callable<T>**, luego de realizar el trabajo que requerimos decrementamos el *latch*:
+3. En nuestra tarea, sea un **Runnable** o un **Callable<T>**, luego de realizar el trabajo que requerimos, decrementamos el *latch*:
 ```[java] 
 latch.countDown();
 ```
